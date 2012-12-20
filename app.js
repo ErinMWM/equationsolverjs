@@ -23,7 +23,7 @@ $(document).ready(function(){
 			console.log(Math.sqrt((x*x) + (y*y)));
 		}} else 
 		;
-
+ 
 
 		$('#pythagAnswer').text(pythagAnswer);
 
