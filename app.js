@@ -1,29 +1,34 @@
 //a*a + b*b = c*c
 
-var squared = function(x, y){
-	console.log(Math.sqrt((x*x) + (y*y)));
-};
+$(document).ready(function(){
+
+	alert('ready');
+
+	function area(length, height){ length * height };
+
+	$('#pythagoreanForm').submit(function(e){
+
+		e.preventDefault();
+
+		a = $('#sidea').val();
+		b = $('#sideb').val();
+		c = $('#hypotenuse').val();
+
+
+		if(a && b){
+			var squared = function (){
+			console.log(Math.sqrt((a*a) + (x*x)));
+		}} else if (a && c) { 
+			var squared = function(){
+			console.log(Math.sqrt((x*x) + (y*y)));
+		}} else 
+		;
+
+
+		$('#pythagAnswer').text(pythagAnswer);
+
+	});
 
 
 
-var squared = function (z, x){
-	console.log(Math.sqrt((z*z) - (x*x)));
-};
-
-
-
-var ask = prompt("Do you have the hypotenuse or a side?")
-
-if(ask = "side"){
-	var squared = function (z, x){
-	console.log(Math.sqrt((z*z) - (x*x)));
-}} else { 
-	var squared = function(x, y){
-	console.log(Math.sqrt((x*x) + (y*y)));
-}};
-
-squared(5, 3)
-squared(2, 4);
-
-
-function area(length, height){ length * height }
+});
